@@ -7,14 +7,14 @@ const projects = [
     description: "A full-stack e-commerce platform built with MERN stack featuring user authentication, product management, cart functionality, and secure payment integration.",
     tags: ["React", "Node.js", "MongoDB", "Express.js"],
     github: "https://github.com/nikhiltelase/my-shopee",
-    demo: "https://my-shopee-demo.netlify.app",
+    demo: "https://my-shopee-beryl.vercel.app/",
     videoEmbed: "https://www.youtube.com/embed/rOj_NqS4p2I"
   },
   {
     title: "AviAI Voice Assistant",
     description: "AI-powered voice assistant with IoT integration capabilities, built using Python. Features natural language processing and home automation control.",
     tags: ["Python", "AI", "IoT", "Speech Recognition"],
-    github: "https://github.com/nikhiltelase/aviai-assistant",
+    github: "https://github.com/nikhiltelase/ai-assistant",
     videoEmbed: "https://www.youtube.com/embed/fxh-XnSUl1Y?si=AtukFbyqzvN5zkDe"
   },
   {
@@ -22,13 +22,15 @@ const projects = [
     description: "A dynamic blog platform built with Flask and Python, featuring user authentication, CRUD operations, and markdown support.",
     tags: ["Python", "Flask", "SQLite", "Bootstrap"],
     github: "https://github.com/nikhiltelase/blog-web-python",
+    demo: "https://blog-web-python.vercel.app/",
     videoEmbed: "https://www.youtube.com/embed/GOt6FxsuUZI?si=EVSeBD3l8DU5lOG_"
   },
   {
     title: "Image Search & Download Application",
     description: "A responsive web application that allows users to search for high-quality images using the Unsplash API, download them, and copy image URLs for easy sharing.",
     tags: [ "JavaScript", "Unsplash API", "HTML", "CSS"],
-    github: "https://github.com/nikhiltelase/blog-web-python",
+    github: "https://github.com/nikhiltelase/image-search",
+    demo: "https://unsplash-images-search-nikhiltelase17.netlify.app/",
     videoEmbed: "https://www.youtube.com/embed/9dNviHbtqCU"
   },
   {
@@ -36,15 +38,14 @@ const projects = [
     description: "Classic snake game with modern features including leaderboard, different difficulty levels, and responsive controls.",
     tags: ["JavaScript", "HTML5", "CSS3"],
     github: "https://github.com/nikhiltelase/snake-game",
-    demo: "https://snake-game-nt.netlify.app",
+    demo: "https://snake-game-heng.onrender.com/",
     videoEmbed: "https://www.youtube.com/embed/mpLLt3EGm0Y?si=ms1a5HnTG_ljTMUE"
   },
   {
     title: "Home Automation",
     description: "Home Automation with Voice Control and Mobile Web Server | ESP8266 & Python",
     tags: ["Python", "IOT", "ESP8266"],
-    github: "https://github.com/nikhiltelase/snake-game",
-    demo: "https://snake-game-nt.netlify.app",
+    github: "https://github.com/nikhiltelase/home-automaton/",
     videoEmbed: "https://www.youtube.com/embed/Z41HXeCW-Ko?si=TVrGBEvX1vUghBGO"
   }
 ];
