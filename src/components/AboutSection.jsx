@@ -4,8 +4,9 @@ import { FaCode, FaRobot, FaServer } from 'react-icons/fa';
 
 function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-dark-100 ">
-      <div className="container mx-auto px-6 backdrop-blur-0" >
+    <section id="about" className="py-20 bg-dark-100">
+      <div className="container mx-auto px-6 backdrop-blur-0">
+        {/* Heading and Description */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +23,8 @@ function AboutSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16 ">
+        {/* Service Cards */}
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {[
             {
               icon: FaCode,
@@ -46,9 +48,9 @@ function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className=" bg-gray-800/50 p-6 rounded-lg shadow-lg hover:transform hover:scale-105 transition-all"
+              className="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:transform hover:scale-105 hover:bg-primary/20 transition-all ease-in-out duration-300"
             >
-              <service.icon className="text-primary text-4xl mb-4 mx-auto" />
+              <service.icon className="text-primary text-4xl mb-4 mx-auto transition-all ease-in-out duration-300 hover:scale-110" />
               <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
               <p className="text-gray-400">{service.description}</p>
             </motion.div>

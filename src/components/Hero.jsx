@@ -3,15 +3,19 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto flex items-center backdrop-blur-0" id="home">
+    <section
+      className="relative w-full h-screen mx-auto flex items-center backdrop-blur-0"
+      id="home"
+    >
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-8">
+        {/* Text Animations */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col gap-4"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-6xl font-bold text-white mb-2 sm:mb-4">
             Hi, I'm{" "}
             <span className="text-accent">
               <TypeAnimation
@@ -29,33 +33,36 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            Python & MERN Stack Developer, passionate about building innovative<br/>
+          <p className="text-lg sm:text-2xl text-gray-400 sm:mb-8">
+            Python & MERN Stack Developer, passionate about building innovative
+            <br />
             solutions in AI, IoT, and Web Development.
           </p>
         </motion.div>
 
+        {/* Button Animations */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
           className="flex gap-4"
         >
           <a
             href="#projects"
-            className="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg transition-all bg-primary"
+            className="bg-accent hover:bg-accent/90 text-white sm:px-6 p-2 sm:py-3 rounded-lg transition-all bg-primary transform hover:scale-105 hover:shadow-lg"
           >
             View Projects
           </a>
           <a
-            href="/nikhil-resume2.pdf"  // Update to a relative path
+            href="/nikhil-resume2.pdf" // Update to a relative path
             download
-            className="border text-primary border-accent text-accent hover:bg-accent/10 px-6 py-3 rounded-lg transition-all"
+            className="border text-primary border-accent text-accent hover:bg-accent/10 p-2 sm:px-6 sm:py-3 rounded-lg transition-all transform hover:scale-105 hover:shadow-lg"
           >
             Download Resume
           </a>
         </motion.div>
 
+        {/* Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -70,7 +77,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-primary rounded-full flex justify-center"
+              className="w-6 h-10 border-2 border-primary rounded-full flex justify-center items-start overflow-hidden"
             >
               <motion.div
                 animate={{ y: [0, 15, 0] }}
